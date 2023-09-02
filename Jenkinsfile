@@ -1,11 +1,6 @@
 // Declarative //
 pipeline {
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-            additionalBuildArgs '--network=host'
-        }
-    }
+
 
     stages {
         stage('Build') {
